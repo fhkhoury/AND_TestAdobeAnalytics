@@ -21,4 +21,5 @@
         <activity android:name=".Detail"></activity>
     </application>
 
+
 </manifest>
