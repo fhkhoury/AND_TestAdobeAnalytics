@@ -1,4 +1,4 @@
-package fiftyfive.and_sampleappvierge;
+package fiftyfive.and_testadobeanalytics;
 
 import org.junit.Test;
 
