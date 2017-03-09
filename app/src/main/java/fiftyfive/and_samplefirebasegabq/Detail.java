@@ -10,15 +10,17 @@ import android.widget.Toast;
 
 public class Detail extends AppCompatActivity {
 
-    Context context = getApplicationContext();
-    //Définition du toast
-    CharSequence text = "CALL MADE !";
-    int duration = Toast.LENGTH_LONG;
-    Toast toast = Toast.makeText(context, text, duration);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Context context = getApplicationContext();
+        //Définition du toast
+        CharSequence text = "CALL MADE !";
+        int duration = Toast.LENGTH_LONG;
+        final Toast toast = Toast.makeText(context, text, duration);
+
         setContentView(R.layout.activity_detail);
 
         Button call = (Button) findViewById(R.id.call);
