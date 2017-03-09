@@ -22,5 +22,15 @@ public class Liste extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Button infos = (Button) findViewById(R.id.informations);
+        infos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Liste.this, Informations.class);
+                startActivity(i);
+            }
+        });
     }
+
 }
