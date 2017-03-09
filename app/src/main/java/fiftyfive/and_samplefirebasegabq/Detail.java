@@ -2,7 +2,6 @@ package fiftyfive.and_samplefirebasegabq;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -23,13 +22,21 @@ public class Detail extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         Button call = (Button) findViewById(R.id.call);
-
-
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 toast.show();
             }
         });
+
+        Button infos = (Button) findViewById(R.id.informations);
+        infos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Detail.this, Informations.class);
+                startActivity(i);
+            }
+        });
     }
+
 }
