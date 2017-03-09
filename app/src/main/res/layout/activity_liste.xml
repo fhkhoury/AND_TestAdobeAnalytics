@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context="fiftyfive.and_samplefirebasegabq.Liste">
 
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:text="Liste"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/goToDetail"
+        android:layout_width="164dp"
+        android:layout_height="72dp"
+        android:text="GoTo Detail"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="219dp" />
+
 </android.support.constraint.ConstraintLayout>

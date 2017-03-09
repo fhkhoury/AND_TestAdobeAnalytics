@@ -23,7 +23,7 @@ public class HomePage extends AppCompatActivity {
         });
 
         Button infos = (Button) findViewById(R.id.informations);
-        goToListe.setOnClickListener(new View.OnClickListener() {
+        infos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(HomePage.this, Informations.class);

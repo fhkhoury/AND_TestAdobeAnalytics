@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".HomePage" />
         <activity android:name=".Informations" />
-        <activity android:name=".Liste"></activity>
+        <activity android:name=".Liste" />
+        <activity android:name=".Detail"></activity>
     </application>
 
 </manifest>
