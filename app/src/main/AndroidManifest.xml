@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fiftyfive.and_samplefirebasegabq">
+    package="fiftyfive.and_sampleappvierge">
 
     <application
         android:allowBackup="true"
@@ -8,17 +8,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name="fiftyfive.and_sampleappvierge.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomePage" />
-        <activity android:name=".Informations" />
-        <activity android:name=".Liste" />
-        <activity android:name=".Detail"></activity>
+        <activity android:name="fiftyfive.and_sampleappvierge.HomePage" />
+        <activity android:name="fiftyfive.and_sampleappvierge.Informations" />
+        <activity android:name="fiftyfive.and_sampleappvierge.Liste" />
+        <activity android:name="fiftyfive.and_sampleappvierge.Detail"></activity>
     </application>
 
 

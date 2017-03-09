@@ -1,4 +1,4 @@
-package fiftyfive.and_samplefirebasegabq;
+package fiftyfive.and_sampleappvierge;
 
 import org.junit.Test;
 

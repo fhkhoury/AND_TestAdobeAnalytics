@@ -1,4 +1,4 @@
-package fiftyfive.and_samplefirebasegabq;
+package fiftyfive.and_sampleappvierge;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

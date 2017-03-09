@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FEFEFE">
-    tools:context="fiftyfive.and_samplefirebasegabq.SplashScreen">
+    tools:context="and_sampleappvierge.SplashScreen">
 
     <ImageView
         android:id="@+id/imgLogo"

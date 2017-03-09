@@ -1,4 +1,4 @@
-package fiftyfive.and_samplefirebasegabq;
+package fiftyfive.and_sampleappvierge;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("fiftyfive.and_samplefirebasegabq", appContext.getPackageName());
+        assertEquals("fiftyfive.and_sampleappvierge", appContext.getPackageName());
     }
 }

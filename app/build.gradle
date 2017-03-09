@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "25.0.0"
     defaultConfig {
-        applicationId "fiftyfive.and_samplefirebasegabq"
+        applicationId "fiftyfive.and_sampleappvierge"
         minSdkVersion 21
         targetSdkVersion 24
         versionCode 1
@@ -30,8 +30,3 @@ dependencies {
 }
 
 
-
-
-
-
-apply plugin: 'com.google.gms.google-services'
