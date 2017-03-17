@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.adobe.mobile.*;
 
+import java.util.HashMap;
+
 public class HomePage extends AppCompatActivity {
 
     @Override
@@ -32,6 +34,9 @@ public class HomePage extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        Analytics.trackState(this.getClass().getName(), null);
+
     }
 
     @Override

@@ -6,9 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import com.adobe.mobile.*;
 
+import java.util.HashMap;
+
 public class SplashScreen extends AppCompatActivity {
 
     private static int SPLASH_TIME_OUT = 5000;
+    private HashMap<String, Object> contextData = new HashMap<String, Object>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +21,7 @@ public class SplashScreen extends AppCompatActivity {
 
         //Allow the SDK access to the application context
         Config.setContext(this.getApplicationContext());
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -31,7 +36,8 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     public void onResume(){
         super.onResume();
-        Config.collectLifecycleData(this);
+        this.contextData.put("coucou", "Mickey");
+        Config.collectLifecycleData(this, this.contextData);
     }
 
     @Override
