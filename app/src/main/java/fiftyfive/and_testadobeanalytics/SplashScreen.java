@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.adobe.mobile.*;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -14,6 +15,9 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
+        //Allow the SDK access to the application context
+        Config.setContext(this.getApplicationContext());
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -22,5 +26,17 @@ public class SplashScreen extends AppCompatActivity {
                 finish();
             }
         }, SPLASH_TIME_OUT);
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        Config.collectLifecycleData(this);
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Config.pauseCollectingLifecycleData();
     }
 }

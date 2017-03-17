@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.adobe.mobile.*;
+
 public class Informations extends AppCompatActivity {
 
     @Override
@@ -27,5 +29,17 @@ public class Informations extends AppCompatActivity {
 
         TextView udid = (TextView) findViewById(R.id.udid);
         //appName.setText(appName.getText() + " " + Context.getSystemService(Context.TELEPHONY_SERVICE).getDeviceID() );
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        Config.collectLifecycleData(this);
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Config.pauseCollectingLifecycleData();
     }
 }

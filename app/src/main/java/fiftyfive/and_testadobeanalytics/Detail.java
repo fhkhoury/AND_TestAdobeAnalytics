@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.adobe.mobile.*;
+
 public class Detail extends AppCompatActivity {
 
 
@@ -39,6 +41,18 @@ public class Detail extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        Config.collectLifecycleData(this);
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Config.pauseCollectingLifecycleData();
     }
 
 }
