@@ -10,14 +10,17 @@ import android.widget.Toast;
 
 import com.adobe.mobile.*;
 
+import java.util.HashMap;
+
 public class Detail extends AppCompatActivity {
 
+    private HashMap<String, Object> contextData = new HashMap<String, Object>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Context context = getApplicationContext();
+        final Context context = getApplicationContext();
         //Définition du toast
         CharSequence text = "CALL MADE !";
         int duration = Toast.LENGTH_LONG;
@@ -29,7 +32,10 @@ public class Detail extends AppCompatActivity {
         call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                contextData.put("Pluto", "Wouaf");
+                Analytics.trackAction("Call", contextData);
                 toast.show();
+
             }
         });
 
