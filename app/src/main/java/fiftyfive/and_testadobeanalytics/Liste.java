@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.adobe.mobile.*;
+
 public class Liste extends AppCompatActivity {
 
     @Override
@@ -33,4 +35,15 @@ public class Liste extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onResume(){
+        super.onResume();
+        Config.collectLifecycleData(this);
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Config.pauseCollectingLifecycleData();
+    }
 }

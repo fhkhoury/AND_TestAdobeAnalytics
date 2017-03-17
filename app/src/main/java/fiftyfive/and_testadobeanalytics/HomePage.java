@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.adobe.mobile.*;
+
 public class HomePage extends AppCompatActivity {
 
     @Override
@@ -30,5 +32,17 @@ public class HomePage extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        Config.collectLifecycleData(this);
+    }
+
+    @Override
+    public void onPause(){
+        super.onPause();
+        Config.pauseCollectingLifecycleData();
     }
 }
